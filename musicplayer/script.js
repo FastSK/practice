@@ -125,33 +125,3 @@ playButton.addEventListener('click', () => {
 
 
 
-
-
-// SPOTIFY API
-// // Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
-// const token = 'BQDihvA34ddMC2YqoiEE8y8ncIRKHwR4XQT-BbJnP0vp2hOoF7FJLdj1Pq9rfP71_rSZHkXl5h8DI-vjsPPNVplvr6UATMZMr5LOldZH9bHGKvBI_Pg56_1RclXN43-nyb8xPb_IVsYmPWwvp_eKD1Faryn_dmQ_d7kqTFGVkPYt8lWczSbkxUVcig36bk5wBLTtBz-O6r8vLsE8DDxCUBfpGch5r1B8LAaFwzilfnJ0P3FnUy8td35KjxJDcIs3e0gNX59ij0iPoJMenMKz';
-// async function fetchWebApi(endpoint, method, body) {
-//     const res = await fetch(`https://api.spotify.com/${endpoint}`, {
-//         headers: {
-//             Authorization: `Bearer ${token}`,
-//         },
-//         method,
-//         body: JSON.stringify(body)
-//     });
-//     return await res.json();
-// }
-
-// async function getTopTracks() {
-//     // Endpoint reference : https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks
-//     return (await fetchWebApi(
-//         'v1/me/top/tracks?time_range=long_term&limit=5', 'GET'
-//     )).items;
-// }
-
-// const topTracks = await getTopTracks();
-// console.log(
-//     topTracks?.map(
-//         ({ name, artists }) =>
-//             `${name} by ${artists.map(artist => artist.name).join(', ')}`
-//     )
-// );
